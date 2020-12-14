@@ -21,10 +21,10 @@
     "analyze": "size-limit --why"
   },
   "peerDependencies": {
-    "react": ">= 16.9.0",
-    "next": ">= 9.0.0",
-    "react-dom": ">= 16.8.0",
-    "react-i18next": ">= 11.0.0",
+    "react": ">=16.9.0",
+    "next": ">=9.0.0",
+    "react-dom": ">=16.9.0",
+    "react-i18next": ">=11.0.0",
     "urijs": "1.x"
   },
   "husky": {
