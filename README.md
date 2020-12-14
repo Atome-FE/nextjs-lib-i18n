@@ -12,7 +12,11 @@ An opinionated i18next wrapper for nextjs, manipulate locale config and provide 
 
 ## Installation
 
-- TODO
+- Install via npm
+
+  ```bash
+  npm install --save git+https://github.com/Atome-FE/nextjs-lib-i18n.git#master
+  ```
 
 ## Integration Guide
 
@@ -71,7 +75,7 @@ An opinionated i18next wrapper for nextjs, manipulate locale config and provide 
   import { defaultLocale, supportedLocales } from 'lib/i18n';
 
   const dev = process.env.NODE_ENV !== 'production';
-  const app = next({ dev, dir: 'test/client/' });
+  const app = next({ dev });
   const handle = app.getRequestHandler();
 
   const nextHandler: express.Handler = (req, res) => {
@@ -90,3 +94,6 @@ An opinionated i18next wrapper for nextjs, manipulate locale config and provide 
   });
 
   ```
+
+## Examples
+The project is in an early stage, if you seeking for more example details, please check repo /test folder
