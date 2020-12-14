@@ -20,7 +20,13 @@
     "size": "size-limit",
     "analyze": "size-limit --why"
   },
-  "peerDependencies": {},
+  "peerDependencies": {
+    "react": ">= 16.8.0",
+    "next": ">= 9.0.0",
+    "react-dom": ">= 16.8.0",
+    "react-i18next": ">= 11.0.0",
+    "urijs": ">= 1.19.0"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "echo 'tsdx lint not working for now'"
