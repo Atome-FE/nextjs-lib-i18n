@@ -1,0 +1,6 @@
+{
+    "watch": ["server/**/*.ts"],
+    "execMap": {
+        "ts": "cross-env TS_NODE_PROJECT=./tsconfig.server.json node -r @swc-node/register"
+    }
+}

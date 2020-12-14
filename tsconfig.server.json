@@ -1,0 +1,12 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "noEmit": false,
+        "module": "commonjs",
+        "target": "ES2017",
+        "outDir": "test/.next/production-server/",
+        "jsx": "react",
+        "rootDir": "test"
+    },
+    "include": ["**/*.ts", "**/*.tsx"]
+}
