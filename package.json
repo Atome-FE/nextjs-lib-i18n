@@ -21,11 +21,11 @@
     "analyze": "size-limit --why"
   },
   "peerDependencies": {
-    "react": "^16.8.0",
-    "next": "^9.x",
-    "react-dom": "^16.8.0",
-    "react-i18next": "^11.x",
-    "urijs": "^1.x"
+    "react": ">=16.8.0",
+    "next": ">=9.0.0",
+    "react-dom": ">=16.8.0",
+    "react-i18next": ">=11.0.0",
+    "urijs": "1.x"
   },
   "husky": {
     "hooks": {
