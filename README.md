@@ -95,5 +95,34 @@ An opinionated i18next wrapper for nextjs, manipulate locale config and provide 
 
   ```
 
+- 4. Change Language
+  - Option 1. will change route to /zh-hk
+
+    ```tsx
+    // initialize
+    const i18n = I18Next.init({ supportedLocales, defaultLocale });
+
+    // in your component
+    const App = () => {
+      const changeLocale = i18n.useChangeLocale()
+      return (
+        <Button onClick={() => changeLocale('zh-hk')} />
+      )
+    }
+    ```
+  - Option 2. change language but keep current route
+
+    ```tsx
+    // initialize
+    const i18n = I18Next.init({ supportedLocales, defaultLocale });
+
+    // in your component
+    const App = () => {
+      return (
+        <Button onClick={() => i18n.changeLanguage('zh-hk')} />
+      )
+    }
+    ```
+
 ## Examples
 The project is in an early stage, if you seeking for more example details, please check repo /test folder
