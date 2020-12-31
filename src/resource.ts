@@ -98,6 +98,15 @@ export class I18Next<
     return getNormalizeTralingSlashPath(path);
   };
 
+  changeLanguage = async (language: string) => {
+    return new Promise<TFunction<object>>((res, rej) => {
+      i18next.changeLanguage(language, (error, t) => {
+        if (error) rej(error);
+        else res(t);
+      });
+    });
+  };
+
   useResource = <T extends object>(
     resource: IResource<T, SupportedLocale, keyof SupportedLocale>
   ) => {
