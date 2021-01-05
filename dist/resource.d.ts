@@ -27,6 +27,7 @@ export declare class I18Next<SupportedLocale extends {
     useLocaleCanonicalPath: ({ reserveDefaultLocalePath }?: {
         reserveDefaultLocalePath: boolean;
     }) => string;
+    changeLanguage: (language: string) => Promise<TFunction<object>>;
     useResource: <T extends object>(resource: IResource<T, SupportedLocale, keyof SupportedLocale>) => {
         t: TFunction<T>;
     };
